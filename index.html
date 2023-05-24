@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>돼지</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+	$(function(){
+		$("button:first").click(function(){
+			alert("사피는귀여워");
+		});
+		$("button:last").click(function(){
+			alert("사피는깜찍해");
+		});
+	});
+    </script>
+    <style>
+	* { margin:0; padding:0; }
+	body { background-color:#FFF0F0; }
+	#pig { margin:50px auto; width:1000px; position:relative; }
+	#bt { margin-left:40%; margin-bottom:2%;  }
+	button { padding:10px 20px; border:none; background-color:#F06E6E; color:white; border-radius:10px; cursor:pointer; }
+	button:hover { background-color:#28A8A8; }
+	.star img { filter:drop-shadow(0 0 10px #fff); width:120px; position:absolute; animation:star 0.7s ease-in-out infinite alternate; z-index:100000;}
+		.star img:nth-of-type(1) { top:-50px; left:-50px; width:20%; }
+		.star img:nth-of-type(2) { top:150px; right:10px; }
+		
+	@keyframes star { 0% { transform:scale(0); filter:drop-shadow(0 0 10px #FF3232); } 100% {transform:scale(0.7); filter:drop-shadow(0 0 10px #FFf); } }
+	
+	h1 { font-size:170px; font-family:"강원교육튼튼"; position:absolute; z-index:10000; color:#28A8A8; text-align:center; font-weight:bold; }
+	p { font-family:"kingham"; color:white; text-shadow:0 0 10px #B90000; font-size:60px; position:absolute; z-index:99999; }
+	p:nth-of-type(1) { top:180px; }
+	p:nth-of-type(2) { top:400px; right:0; }
+	span { padding:50px; font-size:50px; background-color:white; position:absolute; box-shadow:2px 2px 10px #000; font-family:"궁서"; z-index:1000000; }
+		.cu {  top:580px; left:100px; }
+		.cute { top:500px; right:100px; padding:30px 50px; font-size:30px; }
+	#love:hover .lo4 { opacity:100; }
+	.lo1 { width:70%; position:absolute; top:100px; right:0px; z-index:900; }
+	.lo2 { width:60%; position:absolute; top:280px; left:0px; }
+	.lo3 { width:40%; position:absolute; top:500px; left:350px; z-index:999; }
+	.lo4 { width:40%; position:absolute; top:500px; left:350px; z-index:999; opacity:0; }
+	.lo5 { width:40%; position:absolute; top:700px; left:0px; }
+	.lo6 { width:40%; position:absolute; top:800px; right:0px; }
+	.lo7 { width:25%; position:absolute; top:-50px; left:-140px; }
+	.lo8 { width:25%; position:absolute; top:0px; right:-100px; transform:scaleX(-1); }
+	.lo9 { width:5%; position:fixed; top:0px; left:200px; animation:piggg 3s ease-in-out infinite alternate; z-index:10000000;}
+	
+	@keyframes piggg { 0% { transform:translate(-40px,-40px); } 100% { transform:translate(1200px,1000px); } }
+	.lo4:hover {  }
+	.pig1 { background:url(3.png)no-repeat center; }
+
+    </style>
+</head>
+<body>
+	<section id="pig">
+        <header>
+		<div id="bt">
+			<button>사피귀여워</button>
+			<button>사피깜찍해</button>
+		</div>
+		<div class="star">
+				<img src="star1.png">
+				<img src="star2.png">
+			</div>
+		<h1>깜찍이러블리돼지사피</h1>
+		<p>So Lovely...</p>
+		<p>So Gorgeous...</p>
+		
+		<img class="lo1" src="1.png">
+		<img class="lo2" src="2.png">
+		<div id="love">
+			<span class="cu">북북북</span>
+			<img class="lo3" src="3.png">
+			<img class="lo4" src="4.png">
+			<span class="cute">귀여워요</span>
+		</div>
+		
+		<img class="lo5" src="5.png">
+		<img class="lo6" src="6.png">
+		<img class="lo7" src="7.png">
+		<img class="lo8" src="8.png">
+		<img class="lo9" src="9.png">
+	</header>
+	</section>
+</body>
+</html>
